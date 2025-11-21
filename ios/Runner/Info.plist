@@ -32,6 +32,24 @@
 	<string>Please unlock access to the microphone to enable voice playback.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please access the album for upload background pictures</string>
+	<key>NSCalendarsUsageDescription</key>
+    <string>Applications may need to access Calendar to use the function</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Applications may need to access contacts to provide social features</string>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>Applications may need to access the media library to manage audio resources</string>
+	<key>NSMotionUsageDescription</key>
+    <string>Applications may need to access the barometer to provide information.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Applications may require speech recognition to provide voice interaction</string>
+	<key>NSSiriUsageDescription</key>
+    <string>Quickly get directions with Siri voice commands, such as "Hey Siri, tell me the current direction in the app"</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Applications may need to access location information to use the feature</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Applications may need to access location information to use the feature</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Applications may need to use Bluetooth to connect to external devices</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
