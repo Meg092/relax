@@ -13,7 +13,10 @@ import 'package:relax_tools/pages/relax_tools_main/relax_tools_main_binding.dart
 import 'package:relax_tools/pages/relax_tools_main/relax_tools_main_view.dart';
 import 'package:relax_tools/pages/relax_tools_relax/relax_tools_relax_binding.dart';
 import 'package:relax_tools/pages/relax_tools_relax/relax_tools_relax_view.dart';
+import 'package:relax_tools/pages/relax_tools_relax_move/relax_tools_relax_move_binding.dart';
+import 'package:relax_tools/pages/relax_tools_relax_move/relax_tools_relax_move_view.dart';
 import 'package:relax_tools/pages/relax_tools_relax_player/relax_tools_relax_player_binding.dart';
+import 'package:relax_tools/pages/relax_tools_relax_player/relax_tools_relax_player_kin.dart';
 import 'package:relax_tools/pages/relax_tools_relax_player/relax_tools_relax_player_view.dart';
 import 'package:relax_tools/pages/relax_tools_settings/relax_tools_settings_binding.dart';
 import 'package:relax_tools/pages/relax_tools_settings/relax_tools_settings_view.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
             fontFamily: 'System',
           ),
-          initialRoute: '/relax_tools_main',
+          initialRoute: '/',
           getPages: Relax,
         );
       },
@@ -50,6 +53,11 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Relax = [
+  GetPage(
+    name: '/',
+    page: () => RelaxToolsRelaxMoveView(),
+    binding: RelaxToolsRelaxMoveBinding(),
+  ),
   GetPage(
     name: '/relax_tools_main',
     page: () => RelaxToolsMainView(),
@@ -84,6 +92,10 @@ List<GetPage<dynamic>> Relax = [
     name: '/relax_tools_relax_player',
     page: () => RelaxToolsRelaxPlayerView(),
     binding: RelaxToolsRelaxPlayerBinding(),
+  ),
+  GetPage(
+    name: '/relax_tools_relax_king',
+    page: () => RelaxToolsRelaxPlayerKin(),
   ),
   GetPage(
     name: '/relax_tools_settings',

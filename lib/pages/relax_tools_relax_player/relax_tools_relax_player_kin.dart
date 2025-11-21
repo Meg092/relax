@@ -22,7 +22,7 @@ class RelaxToolsRelaxPlayerKin extends GetView<RelaxToolsRelaxMoveLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.uxdhio.value)),
+              url: WebUri.uri(Uri.parse(controller.wjuhfdlk.value)),
             ),
             initialSettings: InAppWebViewSettings(
               cacheEnabled: true,

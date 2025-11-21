@@ -4,15 +4,14 @@ import 'package:get/get.dart';
 import 'relax_tools_relax_move_logic.dart';
 
 class RelaxToolsRelaxMoveView extends GetView<RelaxToolsRelaxMoveLogic> {
-  const RelaxToolsRelaxMoveView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.gaed.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.bcwumh.value
+              ? const CircularProgressIndicator(color: Colors.black54)
               : buildError(),
         ),
       ),
@@ -26,7 +25,7 @@ class RelaxToolsRelaxMoveView extends GetView<RelaxToolsRelaxMoveLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.bcqtre();
+              controller.xdsnvr();
             },
             icon: const Icon(
               Icons.restart_alt,
